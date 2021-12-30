@@ -111,7 +111,7 @@
           <div
             role="button"
             tabindex="0"
-            class="global-navigation__search__button"
+            class="global-navigation__search__button font-default"
           >
             <svg
               class="global-navigation__search__icon"
@@ -125,7 +125,6 @@
                 >
                   <g transform="translate(90.000000, 29.166667)">
                     <g transform="translate(0.000000, 9.875000)">
-
                       <g transform="translate(4.000000, 4.000000)">
                         <path
                           d="M15,15 L10.75,10.75"
@@ -179,17 +178,17 @@
         <div class="global-navigation__mobile__wrapper">
           <div class="global-navigation__mobile__wrapper__content">
             <div class="global-navigation__mobile__item margin--left--20">
-              <a class="link link--light">Cams</a>
+              <a class="font-default link--light">Cams</a>
             </div>
             <div class="global-navigation__group__item margin--left--20">
-              <a class="link link--light">Forecasts</a>
+              <a class="font-default link--light">Forecasts</a>
             </div>
 
             <div class="global-navigation__group__item margin--left--20">
-              <a class="link link--light">Favorites</a>
+              <a class="font-default link--light">Favorites</a>
             </div>
             <div class="global-navigation__group__item margin--left--20">
-              <a class="link link--light">News</a>
+              <a class="font-default link--light">News</a>
             </div>
           </div>
         </div>
@@ -199,28 +198,28 @@
           <ul>
             <li>
               <a
-                class="link link--dark"
+                class="font-default link--darker"
                 href="/surf-reports-forecasts-cams/australia/2077456"
                 >Australia</a
               >
             </li>
             <li>
               <a
-                class="link link--dark"
+                class="font-default link--darker"
                 href="/surf-reports-forecasts-cams/australia/queensland/2152274"
                 >Queensland</a
               >
             </li>
             <li>
               <a
-                class="link link--dark"
+                class="font-default link--darker"
                 href="/surf-reports-forecasts-cams/australia/queensland/gold-coast/7839581"
                 >Gold Coast</a
               >
             </li>
             <li>
               <a
-                class="link link--dark"
+                class="font-default link--darker"
                 href="/surf-reports-forecasts-cams/australia/queensland/gold-coast/coolangatta/2170628"
                 >Coolangatta</a
               >
@@ -228,72 +227,97 @@
           </ul>
         </div>
         <div class="forecast-header__main">
-          <h1 class="forecast-header__main__title">
-            Kirra Surf Report & Forecast
-          </h1>
-          <div class="forecast-header__main__favourite">
-            <button type="button">
-              <div class="button">
-                <svg class="button button-icon">
-                  <g>
-                    <circle cx="16" cy="16" r="16"></circle>
-                    <polygon
-                      points="16 8, 18.5 13, 24 14, 20 18, 21 23, 16 20, 11 23, 12 18, 8 14, 13.5 13"
-                      stroke-linejoin="round"
-                    ></polygon>
-                  </g>
+          <div class="forecast-header__main__row">
+            <h1 class="forecast-header__main__title font-medium">
+              Kirra Surf Report & Forecast
+            </h1>
+            <div class="forecast-header__main__favorite">
+              <button type="button">
+                <div class="forecast-header__main__favorite__button">
+                  <svg class="forecast-header__main__favorite__button__icon">
+                    <g>
+                      <circle cx="16" cy="16" r="16" class="favorited"></circle>
+                      <polygon
+                        points="16 8, 18.5 13, 24 14, 20 18, 21 23, 16 20, 11 23, 12 18, 8 14, 13.5 13"
+                        stroke-linejoin="round"
+                        fill="#fff"
+                      ></polygon>
+                    </g>
+                  </svg>
+                  <div class="forecast-header__main__favorite__indicator__text">
+                    Favorited
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+          <ul class="forecast-header__nav">
+            <li>
+              <a
+                class="
+                  forecast-header__nav__item__link
+                  font-forecast-header__nav
+                  uppercase
+                  link--darker
+                "
+                href="/"
+                target=""
+                rel="noreferrer"
+                >Regional Forecast</a
+              >
+            </li>
+            <li>
+              <a
+                class="
+                  forecast-header__nav__item__link
+                  font-forecast-header__nav
+                  uppercase
+                  link--darker
+                "
+                href="/"
+                target=""
+                rel="noreferrer"
+              >
+                Premium Analysis</a
+              >
+            </li>
+            <li>
+              <a
+                class="
+                  forecast-header__nav__item__link
+                  font-forecast-header__nav
+                  uppercase
+                  link--darker
+                "
+                href="/"
+                target=""
+                rel="noreferrer"
+                >charts</a
+              >
+            </li>
+            <li>
+              <a
+                class="
+                  forecast-header__nav__item__link
+                  font-forecast-header__nav
+                  uppercase
+                  link--darker
+                "
+                href="/"
+                rel="noreferrer"
+                >More</a
+              >
+              <div class="chevron">
+                <svg viewBox="0 0 13 7" preserveAspectRatio="xMinYMin meet">
+                  <polyline
+                    points="1 1, 6.5 6, 12 1"
+                    fill="none"
+                    stroke-linejoin="round"
+                  ></polyline>
                 </svg>
-                <div class="button button-text">Favorited</div>
               </div>
-            </button>
-          </div>
-          <div class="forecast-header__nav">
-            <div class="forecast-header__nav__page-level__links">
-              <a
-                href="https://www.surfline.com/surf-forecasts/gold-coast/58581a836630e24c44879027"
-                class="link--uppercase"
-              >
-                Regional Forecast</a
-              >
-              <a
-                href="https://www.surfline.com/surf-forecasts/gold-coast/58581a836630e24c44879027/premium-analysis"
-                class="sl-forecast-header__nav__page-level__link"
-                ><div class="sl-forecast-header__nav__page-level__link__text">
-                  Premium Analysis
-                </div></a
-              >
-              <a
-                href="/surf-charts/wave-height/gold-coast/58581a836630e24c44879027"
-                class="sl-forecast-header__nav__page-level__link"
-                ><div class="sl-forecast-header__nav__page-level__link__text">
-                  Charts
-                </div></a
-              >
-            </div>
-            <div class="forecast-header__nav__external__links">
-              <a
-                class="link"
-                href="https://www.surfline.com/surf-reports-forecasts-cams/buoys/australia/queensland/gold-coast/coolangatta/2170628"
-                target=""
-                rel="noreferrer"
-                >Buoys</a
-              >
-              <a
-                class="link"
-                href="https://www.surfline.com/travel/australia/queensland/gold-coast-surfing-and-beaches/7839581"
-                target=""
-                rel="noreferrer"
-                >Travel</a
-              >
-              <a
-                class="link"
-                href="/surf-cams/greenmount/617b77112743d967db12b35e"
-                target=""
-                rel="noreferrer"
-                >Cam Rewind</a
-              >
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
