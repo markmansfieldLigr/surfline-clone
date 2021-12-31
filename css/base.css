@@ -3,6 +3,7 @@
 /* 3. links */
 /* 4. native selectors */
 /* 5. symbols */
+/* 6. lists
 
 /* 1. */
 body {
@@ -89,4 +90,11 @@ a {
   height: 13px;
   justify-content: center;
   width: 13px;
+}
+
+/* 6. lists */
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
 }
